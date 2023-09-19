@@ -87,13 +87,13 @@ void intel_uc_fw_change_status(struct intel_uc_fw *uc_fw,
 #define INTEL_GUC_FIRMWARE_DEFS(fw_def, guc_maj, guc_mmp) \
 	fw_def(METEORLAKE,   0, guc_mmp(mtl,  70, 6, 8)) \
 	fw_def(PONTEVECCHIO, 0, guc_mmp(pvc,  70, 7, 0)) \
-	fw_def(DG2,          0, guc_mmp(dg2,  70, 7, 0)) \
+	fw_def(DG2,          0, guc_maj(dg2,  70, 5, 1)) \
 	fw_def(XEHPSDV,  0, guc_mmp(xehpsdv,  70, 7, 0)) \
-	fw_def(ALDERLAKE_P,  0, guc_mmp(adlp, 70, 7, 0)) \
+	fw_def(ALDERLAKE_P,  0, guc_maj(adlp, 70, 5, 1)) \
 	fw_def(ALDERLAKE_S,  0, guc_mmp(tgl,  70, 7, 0)) \
 	fw_def(DG1,          0, guc_mmp(dg1,  70, 7, 0)) \
 	fw_def(ROCKETLAKE,   0, guc_mmp(tgl,  70, 7, 0)) \
-	fw_def(TIGERLAKE,    0, guc_mmp(tgl,  70, 7, 0)) \
+	fw_def(TIGERLAKE,    0, guc_maj(tgl,  70, 5, 1)) \
 	fw_def(JASPERLAKE,   0, guc_mmp(ehl,  70, 7, 0)) \
 	fw_def(ELKHARTLAKE,  0, guc_mmp(ehl,  70, 7, 0)) \
 	fw_def(ICELAKE,      0, guc_mmp(icl,  70, 7, 0)) \
